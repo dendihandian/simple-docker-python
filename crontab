@@ -1,0 +1,5 @@
+# START CRON JOB
+
+*/5 * * * * python3 /root/task.py > /dev/null 2>&1
+
+# END CRON JOB
