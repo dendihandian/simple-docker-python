@@ -18,12 +18,12 @@ interactively:
 docker run -it --name sdp-service-1 simple-docker-python:latest
 ```
 
-or in daemon:
+or in-background:
 ```
 docker run -d --name sdp-service-1 simple-docker-python:latest
 ```
 
-### Execute command (exec in daemon)
+### Execute command (exec in-background)
 ```
 docker exec sdp-service-1 python task.py
 ```
