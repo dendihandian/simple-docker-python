@@ -8,7 +8,6 @@ if __name__ == "__main__":
     logging.basicConfig(filename='service.log', encoding='utf-8', level=logging.DEBUG)
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    message = 'Hello, this is an info.'
 
     sys.stdout.write(f"[{timestamp}] task.py sys.stdout.write - Hello, this is python\'s sys.stdout.write() message")
     print(f"[{timestamp}] task.py PRINT - Hello, this is python's print() message")
