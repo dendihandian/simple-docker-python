@@ -1,6 +1,6 @@
-FROM python:3.10-slim
+FROM python:3.10-alpine
 
-RUN apt-get update && apt-get -y install cron vim
+MAINTAINER dendihandian
 
 WORKDIR /root
 
@@ -8,4 +8,8 @@ COPY crontab /etc/cron.d/crontab
 
 COPY task.py /root/task.py
 
-CMD ["cron", "-f"]
+RUN crontab /etc/cron.d/crontab
+
+RUN touch /root/service.log
+
+CMD crond && tail -f /root/service.log
