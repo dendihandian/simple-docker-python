@@ -8,7 +8,7 @@ if __name__ == "__main__":
     message = 'Hello, this is an info.'
 
     sys.stdout.write(f"[{timestamp}] task.py sys.stdout.write - {message} (sys.stdout.write)\n")
-    print(f"[{timestamp}] task.py PRINT - {message} (print)\n")
+    print(f"[{timestamp}] task.py PRINT - {message} (print)")
     logging.debug(f"[{timestamp}] task.py DEBUG - {message} (logging.debug)\n")
     logging.info(f"[{timestamp}] task.py INFO - {message} (logging.info)\n")
     logging.warning(f"[{timestamp}] task.py WARNING - {message} (logging.warning)\n")
