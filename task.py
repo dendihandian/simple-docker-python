@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    sys.stdout.write(f"[{timestamp}] task.py sys.stdout.write - Hello, this is python\'s sys.stdout.write() message")
+    sys.stdout.write(f"[{timestamp}] task.py sys.stdout.write - Hello, this is python's sys.stdout.write() message")
     print(f"[{timestamp}] task.py PRINT - Hello, this is python's print() message")
     logging.debug(f"[{timestamp}] task.py DEBUG - Hello, this is a debug (logging.debug) message")
     logging.info(f"[{timestamp}] task.py INFO - Hello, this is an info (logging.info) message")
