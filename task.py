@@ -10,10 +10,10 @@ if __name__ == "__main__":
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     message = 'Hello, this is an info.'
 
-    sys.stdout.write(f"[{timestamp}] task.py sys.stdout.write - {message} (sys.stdout.write)")
-    print(f"[{timestamp}] task.py PRINT - {message} (print)")
-    logging.debug(f"[{timestamp}] task.py DEBUG - {message} (logging.debug)")
-    logging.info(f"[{timestamp}] task.py INFO - {message} (logging.info)")
-    logging.warning(f"[{timestamp}] task.py WARNING - {message} (logging.warning)")
-    logging.error(f"[{timestamp}] task.py ERROR - {message} (logging.error)")
-    logging.critical(f"[{timestamp}] task.py CRITICAL - {message} (logging.critical)")
+    sys.stdout.write(f"[{timestamp}] task.py sys.stdout.write - Hello, this is python\'s sys.stdout.write() message")
+    print(f"[{timestamp}] task.py PRINT - Hello, this is python's print() message")
+    logging.debug(f"[{timestamp}] task.py DEBUG - Hello, this is a debug (logging.debug) message")
+    logging.info(f"[{timestamp}] task.py INFO - Hello, this is an info (logging.info) message")
+    logging.warning(f"[{timestamp}] task.py WARNING - Hello, this is a warning (logging.warning) message")
+    logging.error(f"[{timestamp}] task.py ERROR - Hello, this is an error (logging.error) message")
+    logging.critical(f"[{timestamp}] task.py CRITICAL - Hello, this is a critical (logging.critical) message")
