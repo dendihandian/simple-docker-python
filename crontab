@@ -1,1 +1,1 @@
-*/2 * * * * python3 /root/task.py >> /root/service.log 2>> /root/service.log
+* * * * * python3 /root/task.py >> /root/service.log 2>> /root/service.log
